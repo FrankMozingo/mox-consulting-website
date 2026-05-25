@@ -13,7 +13,7 @@ Plain HTML + CSS + vanilla JS. No build step. Deployed on Cloudflare Pages.
 - `js/main.js` — smooth scroll, FAQ accordion, mobile menu, scroll-spy
 - `assets/` — favicon set + Open Graph image
 - `robots.txt`, `sitemap.xml` — SEO
-- `_headers`, `_redirects`, `wrangler.toml` — Cloudflare Pages config
+- `_headers`, `_redirects` — Cloudflare Pages config
 
 ## Local preview
 ```bash
@@ -22,4 +22,11 @@ python -m http.server 8000
 ```
 
 ## Deploy
-Cloudflare Pages builds from the repo root (`pages_build_output_dir = "."`).
+Cloudflare Pages, Git-connected to `FrankMozingo/mox-consulting-website` (branch `main`).
+It's a no-build static site — configure in the Pages dashboard:
+- Framework preset: **None**
+- Build command: *(empty)*
+- Build output directory: **`/`** (repo root)
+
+There is intentionally no `wrangler.toml` — its presence makes the Pages Git builder
+attempt a Workers deploy, which fails for a static site.
