@@ -1,0 +1,11 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Playwright / tooling artifacts
+.playwright-mcp/
+*.log
+
+# Node (if a build step is added later)
+node_modules/

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MOX Consulting cleans up messy data, automates repetitive work, and adds practical AI for churches, schools, manufacturers, and small businesses." />
+  <meta name="author" content="Frank Mozingo" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0A0E1A" />
+  <link rel="canonical" href="https://mox-consulting.com/" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/assets/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="MOX Consulting" />
+  <meta property="og:title" content="MOX Consulting — Clean Up Your Data. Automate the Busywork. Add Practical AI." />
+  <meta property="og:description" content="We help organizations clean up data, streamline operations, and implement practical AI — so your people can focus on what actually matters." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mox-consulting.com/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://mox-consulting.com/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="MOX Consulting — data cleanup, automation, and practical AI" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MOX Consulting — Clean Up Your Data. Automate the Busywork. Add Practical AI." />
+  <meta name="twitter:description" content="We clean up your data, automate the repetitive stuff, and add practical AI. Get a free systems review." />
+  <meta name="twitter:image" content="https://mox-consulting.com/assets/og-image.png" />
+
+  <title>MOX Consulting — Data Cleanup, Automation &amp; Practical AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!-- Structured data: business + services -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "MOX Consulting",
+    "description": "Data cleanup, workflow automation, systems integration, dashboards, and practical AI implementation for churches, schools, manufacturers, and small businesses.",
+    "url": "https://mox-consulting.com/",
+    "image": "https://mox-consulting.com/assets/og-image.png",
+    "logo": "https://mox-consulting.com/assets/og-image.png",
+    "email": "frank.mozingo@gmail.com",
+    "founder": { "@type": "Person", "name": "Frank Mozingo" },
+    "areaServed": "United States",
+    "priceRange": "$$",
+    "knowsAbout": ["Data Cleanup", "Workflow Automation", "Systems Integration", "Business Dashboards", "Practical AI Implementation"],
+    "makesOffer": {
+      "@type": "Offer",
+      "name": "Free Systems Review",
+      "description": "A no-cost review of your current operations that identifies your biggest time wasters and gives you an actionable plan to keep — even if you don't work with us.",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Data Cleanup & Organization", "description": "Fix messy, scattered data so everything actually works together." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Workflow Automation", "description": "Stop copying data between apps and doing the same tasks by hand." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Systems Integration", "description": "Make your tools talk to each other automatically." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dashboards & Reporting", "description": "Get clear, real-time visibility without building reports by hand." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Practical AI Implementation", "description": "Use AI in simple, useful ways that actually save time." } }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Structured data: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Do you work with any industry?", "acceptedAnswer": { "@type": "Answer", "text": "Most industries, with two exceptions: medical/dental (HIPAA creates obligations that don't fit the current model) and defense/aerospace (ITAR/CMMC territory). Everyone else is fair game." } },
+      { "@type": "Question", "name": "What if we're not ready for AI yet?", "acceptedAnswer": { "@type": "Answer", "text": "Good — AI is the last step, not the first. Every project starts with cleaning up your data. You can't automate or query data that isn't clean and organized." } },
+      { "@type": "Question", "name": "Do we need to buy software licenses?", "acceptedAnswer": { "@type": "Answer", "text": "No. The whole stack (PostgreSQL, NocoDB, n8n, Caddy) is open source and self-hosted. You pay for a small server (~$9/mo) and our time — nothing else." } },
+      { "@type": "Question", "name": "Can we keep our data on-site?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We can run the identical system on a mini-PC at your location and manage it remotely — ideal for sensitive donor or student records." } },
+      { "@type": "Question", "name": "What's included in the monthly support?", "acceptedAnswer": { "@type": "Answer", "text": "A monthly check-in, backup monitoring, quarterly updates, and workflow improvements. New features or integrations are scoped separately as add-ons." } },
+      { "@type": "Question", "name": "How long does a typical project take?", "acceptedAnswer": { "@type": "Answer", "text": "Cleanup through setup usually runs 2–6 weeks depending on how messy the data is. Adding reporting and AI on top can extend that. Optional support starts after handoff." } },
+      { "@type": "Question", "name": "What happens to our data if we stop working together?", "acceptedAnswer": { "@type": "Answer", "text": "You own your data. At any point you can request a full export in standard format, readable by any database tool. No vendor lock-in, ever." } },
+      { "@type": "Question", "name": "What's the first step?", "acceptedAnswer": { "@type": "Answer", "text": "A free systems review. No pitch and no proposal until we understand what you actually have and what you actually need." } }
+    ]
+  }
+  </script>
+</head>
+<body id="top">
+
+  <!-- =================== NAV =================== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo" aria-label="MOX Consulting home">
+        <span class="nav__logo-mark">MOX</span>
+        <span class="nav__logo-word">Consulting</span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <a href="#services">What We Do</a>
+        <a href="#how-it-works">How We Work</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav__cta">Free Audit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =================== HERO =================== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="hero__eyebrow">Data cleanup &middot; Automation &middot; Practical AI</p>
+        <h1 class="hero__headline">Is your business drowning in spreadsheets, disconnected systems, and <span class="hero__accent">repetitive work?</span></h1>
+        <p class="hero__subhead">
+          We help organizations clean up data, streamline operations, and implement practical AI solutions &mdash;
+          so your people can focus on what actually matters.
+        </p>
+        <div class="hero__ctas">
+          <a href="#contact" class="btn btn--primary">Get a Free Audit</a>
+          <a href="#how-it-works" class="btn btn--ghost">See How We Work</a>
+        </div>
+        <p class="hero__principle">
+          <span class="hero__principle-label">Operating principle</span>
+          <span class="hero__principle-text">AI does not fix bad data. It amplifies structured data.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- =================== SERVICES =================== -->
+    <section class="section services" id="services">
+      <div class="container">
+        <h2 class="section__title">What We Do</h2>
+        <p class="section__lede">
+          Five things that take the busywork off your team &mdash; in plain terms, here's how we help.
+        </p>
+        <div class="services__grid services__grid--five">
+          <article class="card">
+            <span class="card__num">01</span>
+            <h3 class="card__title">Data Cleanup &amp; Organization</h3>
+            <p class="card__body">Fix messy, scattered data so everything actually works together.</p>
+          </article>
+          <article class="card">
+            <span class="card__num">02</span>
+            <h3 class="card__title">Workflow Automation</h3>
+            <p class="card__body">Stop copying data between apps and doing the same tasks by hand.</p>
+          </article>
+          <article class="card">
+            <span class="card__num">03</span>
+            <h3 class="card__title">Systems Integration</h3>
+            <p class="card__body">Make your tools talk to each other automatically.</p>
+          </article>
+          <article class="card">
+            <span class="card__num">04</span>
+            <h3 class="card__title">Dashboards &amp; Reporting</h3>
+            <p class="card__body">Get clear, real-time visibility without building reports by hand.</p>
+          </article>
+          <article class="card">
+            <span class="card__num">05</span>
+            <h3 class="card__title">Practical AI Implementation</h3>
+            <p class="card__body">Use AI in simple, useful ways that actually save time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== HOW IT WORKS =================== -->
+    <section class="section how" id="how-it-works">
+      <div class="container">
+        <h2 class="section__title">How We Work</h2>
+        <p class="section__lede">A direct path from messy reality to a working system. No slide decks, no jargon.</p>
+        <ol class="how__steps">
+          <li class="how__step">
+            <span class="how__num">1</span>
+            <div>
+              <h3>Free Systems Review</h3>
+              <p>We look at your current operations, find the biggest time wasters, and give you a clear roadmap. No cost, no obligation.</p>
+            </div>
+          </li>
+          <li class="how__step">
+            <span class="how__num">2</span>
+            <div>
+              <h3>Build the Solution</h3>
+              <p>We clean your data, build the automations, and set up integrations &mdash; all at a fixed price with clear deliverables.</p>
+            </div>
+          </li>
+          <li class="how__step">
+            <span class="how__num">3</span>
+            <div>
+              <h3>Ongoing Support (Optional)</h3>
+              <p>A monthly retainer keeps everything running smoothly as your business changes.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =================== VERTICALS =================== -->
+    <section class="section verticals" id="verticals">
+      <div class="container">
+        <h2 class="section__title">Who We Help</h2>
+        <p class="section__lede">Same approach across every kind of organization. The pain just shows up in different places.</p>
+        <div class="verticals__grid">
+          <article class="tile">
+            <h3>Churches &amp; Nonprofits</h3>
+            <p>Donor records, member data, and manual reporting that eats your week. We clean it up and automate it.</p>
+          </article>
+          <article class="tile">
+            <h3>Schools &amp; Education</h3>
+            <p>Student data scattered across tools, with reports built by hand. We bring it into one clear system.</p>
+          </article>
+          <article class="tile">
+            <h3>Manufacturing &amp; Industrial</h3>
+            <p>ERP exports and production data stuck in silos. 12+ years of real production-floor credibility.</p>
+          </article>
+          <article class="tile">
+            <h3>Small &amp; Medium Business</h3>
+            <p>Disconnected tools and no real reporting. Measurable time and money saved within weeks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== WHY CHOOSE US =================== -->
+    <section class="section compare" id="why-us">
+      <div class="container">
+        <h2 class="section__title">Why Work With Us</h2>
+        <p class="section__lede">Compare the usual fix &mdash; hiring another person &mdash; with building the system once.</p>
+        <div class="compare__table-wrap">
+          <table class="compare__table">
+            <thead>
+              <tr>
+                <th scope="col">&nbsp;</th>
+                <th scope="col">Hire a coordinator</th>
+                <th scope="col" class="compare__col--us">Build the system (MOX)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cost</td>
+                <td>~$45k+ / year, every year</td>
+                <td class="compare__col--us">One-time build + small optional retainer</td>
+              </tr>
+              <tr>
+                <td>The busywork</td>
+                <td>Still done by hand, just by someone new</td>
+                <td class="compare__col--us">Automated, so it mostly stops</td>
+              </tr>
+              <tr>
+                <td>Scales with you</td>
+                <td>You hire again when the work grows</td>
+                <td class="compare__col--us">The system handles the growth</td>
+              </tr>
+              <tr>
+                <td>Knowledge</td>
+                <td>Walks out the door if they leave</td>
+                <td class="compare__col--us">Lives in a documented system you own</td>
+              </tr>
+              <tr>
+                <td>You own it</td>
+                <td>Process lives in someone's head</td>
+                <td class="compare__col--us">Yours &mdash; full data export, no lock-in</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="compare__note">Coordinator salary is a typical U.S. market estimate for an admin/operations hire, not a client-specific figure.</p>
+      </div>
+    </section>
+
+    <!-- =================== STACK =================== -->
+    <section class="section stack" id="stack">
+      <div class="container">
+        <h2 class="section__title">Built On Open Tools</h2>
+        <p class="section__lede">
+          The same proven, open-source stack every time. You own everything &mdash; no licenses, no lock-in.
+        </p>
+        <ul class="stack__row" role="list">
+          <li class="badge">PostgreSQL</li>
+          <li class="badge">NocoDB</li>
+          <li class="badge">n8n</li>
+          <li class="badge">Caddy</li>
+          <li class="badge">Tailscale</li>
+          <li class="badge">Cloudflare</li>
+          <li class="badge">Hetzner</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =================== ABOUT =================== -->
+    <section class="section about" id="about">
+      <div class="container about__inner">
+        <h2 class="section__title">About Frank</h2>
+        <p class="about__body">
+          Frank Mozingo is a data and systems engineer with 12+ years in semiconductor manufacturing &mdash;
+          building production data pipelines, system integrations, and automation at scale for companies like Wolfspeed.
+          MOX Consulting brings that same rigor to the organizations that need it most: the ones drowning in
+          spreadsheets with no dedicated data staff.
+        </p>
+        <p class="about__body">
+          If you want someone who has actually run these systems &mdash; not just sold them &mdash; that's the difference.
+        </p>
+      </div>
+    </section>
+
+    <!-- =================== FAQ =================== -->
+    <section class="section faq" id="faq">
+      <div class="container">
+        <h2 class="section__title">Frequently Asked Questions</h2>
+        <div class="faq__list">
+
+          <details class="faq__item">
+            <summary>Do you work with any industry?</summary>
+            <p>Most industries, with two exceptions: medical/dental (HIPAA creates obligations that don't fit the current model) and defense/aerospace (ITAR/CMMC territory). Everyone else is fair game.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>What if we're not ready for AI yet?</summary>
+            <p>Good &mdash; AI is the last step, not the first. Every project starts with cleaning up your data. You can't automate or query data that isn't clean and organized.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Do we need to buy software licenses?</summary>
+            <p>No. The whole stack (PostgreSQL, NocoDB, n8n, Caddy) is open source and self-hosted. You pay for a small server (~$9/mo) and our time &mdash; nothing else.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Can we keep our data on-site?</summary>
+            <p>Yes. We can run the identical system on a mini-PC at your location and manage it remotely &mdash; ideal for sensitive donor or student records.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>What's included in the monthly support?</summary>
+            <p>A monthly check-in, backup monitoring, quarterly updates, and workflow improvements. New features or integrations are scoped separately as add-ons.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>How long does a typical project take?</summary>
+            <p>Cleanup through setup usually runs 2&ndash;6 weeks depending on how messy the data is. Adding reporting and AI on top can extend that. Optional support starts after handoff.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>What happens to our data if we stop working together?</summary>
+            <p>You own your data. At any point you can request a full export in standard format, readable by any database tool. No vendor lock-in, ever.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>What's the first step?</summary>
+            <p>A free systems review. No pitch and no proposal until we understand what you actually have and what you actually need.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== CONTACT =================== -->
+    <section class="section contact" id="contact">
+      <div class="container contact__inner">
+        <h2 class="section__title">Get a Free Audit</h2>
+        <p class="section__lede">
+          No cost. No sales pitch. We'll show you where you're losing time and money and give you a plan you can
+          keep &mdash; even if you don't work with us. Tell us what you're working with and we'll respond within
+          one business day.
+        </p>
+        <form class="contact__form" action="https://formspree.io/f/xpzgkqvw" method="POST">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="company">Company / Organization</label>
+            <input type="text" id="company" name="company" autocomplete="organization" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="message">How can we help?</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary contact__submit">Get My Free Audit</button>
+        </form>
+        <p class="contact__fallback">
+          Or email directly: <a href="mailto:frank.mozingo@gmail.com">frank.mozingo@gmail.com</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">MOX Consulting</span>
+        <span class="footer__tag">Clean data. Honest systems. No lock-in.</span>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#services">What We Do</a>
+        <a href="#how-it-works">How We Work</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#about">About</a>
+        <a href="#contact">Free Audit</a>
+      </nav>
+      <div class="footer__legal">
+        <a href="mailto:frank.mozingo@gmail.com">frank.mozingo@gmail.com</a>
+        <span>mox-consulting.com</span>
+        <span>&copy; <span id="year">2026</span> MOX Consulting</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
