@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="MOX Consulting cleans up messy data, automates repetitive work, and adds practical AI for churches, schools, manufacturers, and small businesses." />
+  <meta name="description" content="MOX Consulting cleans up messy data, automates repetitive work, and adds practical AI for small businesses and nonprofits." />
   <meta name="author" content="Frank Mozingo" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0A0E1A" />
@@ -44,13 +44,28 @@
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "MOX Consulting",
-    "description": "Data cleanup, workflow automation, systems integration, dashboards, and practical AI implementation for churches, schools, manufacturers, and small businesses.",
+    "description": "Data cleanup, workflow automation, systems integration, dashboards, and practical AI implementation for small businesses and nonprofits.",
     "url": "https://mox-consulting.com/",
     "image": "https://mox-consulting.com/assets/og-image.png",
     "logo": "https://mox-consulting.com/assets/og-image.png",
     "email": "frank.mozingo@gmail.com",
+    "telephone": "+1-919-638-5764",
     "founder": { "@type": "Person", "name": "Frank Mozingo" },
-    "areaServed": "United States",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Wendell",
+      "addressRegion": "NC",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Wendell" },
+      { "@type": "City", "name": "Zebulon" },
+      { "@type": "City", "name": "Knightdale" },
+      { "@type": "City", "name": "Raleigh" },
+      { "@type": "AdministrativeArea", "name": "Wake County" },
+      { "@type": "State", "name": "North Carolina" },
+      { "@type": "Country", "name": "United States" }
+    ],
     "priceRange": "$$",
     "knowsAbout": ["Data Cleanup", "Workflow Automation", "Systems Integration", "Business Dashboards", "Practical AI Implementation"],
     "makesOffer": {
@@ -80,12 +95,13 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "Do you work with any industry?", "acceptedAnswer": { "@type": "Answer", "text": "Most industries, with two exceptions: medical/dental (HIPAA creates obligations that don't fit the current model) and defense/aerospace (ITAR/CMMC territory). Everyone else is fair game." } },
-      { "@type": "Question", "name": "What if we're not ready for AI yet?", "acceptedAnswer": { "@type": "Answer", "text": "Good — AI is the last step, not the first. Every project starts with cleaning up your data. You can't automate or query data that isn't clean and organized." } },
-      { "@type": "Question", "name": "Do we need to buy software licenses?", "acceptedAnswer": { "@type": "Answer", "text": "No. The whole stack (PostgreSQL, NocoDB, n8n, Caddy) is open source and self-hosted. You pay for a small server (~$9/mo) and our time — nothing else." } },
-      { "@type": "Question", "name": "Can we keep our data on-site?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We can run the identical system on a mini-PC at your location and manage it remotely — ideal for sensitive donor or student records." } },
+      { "@type": "Question", "name": "How much does it cost to clean up and automate my business data?", "acceptedAnswer": { "@type": "Answer", "text": "Most projects are a fixed price between $2,500 and $5,000, scoped up front so you know the number before any work starts. That covers cleaning up your data, automating one or two manual workflows, and setting up a clear dashboard. Ongoing support, if you want it, is an optional $300–$750/month." } },
+      { "@type": "Question", "name": "What kind of businesses do you work with?", "acceptedAnswer": { "@type": "Answer", "text": "Small and mid-sized businesses (roughly 2–30 people) drowning in spreadsheets and disconnected apps, plus small nonprofits with the same problem. Two exceptions: medical/dental (HIPAA) and defense/aerospace (ITAR/CMMC). Everyone else is fair game." } },
+      { "@type": "Question", "name": "What if we're not ready for AI yet?", "acceptedAnswer": { "@type": "Answer", "text": "That's fine — AI is the last step, not the first. Every project starts with cleaning up your data, because you can't automate or query data that isn't clean and organized." } },
+      { "@type": "Question", "name": "Do we need to buy software licenses?", "acceptedAnswer": { "@type": "Answer", "text": "No. The whole stack (PostgreSQL, NocoDB, n8n, Caddy) is open source and self-hosted. You pay for a small server (about $9/month) and our time — nothing else." } },
+      { "@type": "Question", "name": "Can we keep our data on-site?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We can run the identical system on a mini-PC at your location and manage it remotely — ideal for sensitive customer, financial, or donor records." } },
       { "@type": "Question", "name": "What's included in the monthly support?", "acceptedAnswer": { "@type": "Answer", "text": "A monthly check-in, backup monitoring, quarterly updates, and workflow improvements. New features or integrations are scoped separately as add-ons." } },
-      { "@type": "Question", "name": "How long does a typical project take?", "acceptedAnswer": { "@type": "Answer", "text": "Cleanup through setup usually runs 2–6 weeks depending on how messy the data is. Adding reporting and AI on top can extend that. Optional support starts after handoff." } },
+      { "@type": "Question", "name": "How long does a typical project take?", "acceptedAnswer": { "@type": "Answer", "text": "A typical project runs 2 to 4 weeks from cleanup through setup, depending on how messy the data is. Adding reporting and AI on top can extend that. Optional support starts after handoff." } },
       { "@type": "Question", "name": "What happens to our data if we stop working together?", "acceptedAnswer": { "@type": "Answer", "text": "You own your data. At any point you can request a full export in standard format, readable by any database tool. No vendor lock-in, ever." } },
       { "@type": "Question", "name": "What's the first step?", "acceptedAnswer": { "@type": "Answer", "text": "A free systems review. No pitch and no proposal until we understand what you actually have and what you actually need." } }
     ]
@@ -120,10 +136,10 @@
     <section class="hero">
       <div class="container hero__inner">
         <p class="hero__eyebrow">Data cleanup &middot; Automation &middot; Practical AI</p>
-        <h1 class="hero__headline">Is your business drowning in spreadsheets, disconnected systems, and <span class="hero__accent">repetitive work?</span></h1>
+        <h1 class="hero__headline">Is your business losing hours every week to spreadsheets, disconnected tools, and <span class="hero__accent">work done by hand?</span></h1>
         <p class="hero__subhead">
-          We help organizations clean up data, streamline operations, and implement practical AI solutions &mdash;
-          so your people can focus on what actually matters.
+          We help small businesses clean up their data, automate the repetitive stuff, and get one clear view of
+          what's actually happening &mdash; so you and your team can get back to the work that grows the business.
         </p>
         <div class="hero__ctas">
           <a href="#contact" class="btn btn--primary">Get a Free Audit</a>
@@ -208,23 +224,15 @@
     <section class="section verticals" id="verticals">
       <div class="container">
         <h2 class="section__title">Who We Help</h2>
-        <p class="section__lede">Same approach across every kind of organization. The pain just shows up in different places.</p>
+        <p class="section__lede">Built for small businesses first &mdash; and any lean organization drowning in manual work.</p>
         <div class="verticals__grid">
           <article class="tile">
-            <h3>Churches &amp; Nonprofits</h3>
-            <p>Donor records, member data, and manual reporting that eats your week. We clean it up and automate it.</p>
-          </article>
-          <article class="tile">
-            <h3>Schools &amp; Education</h3>
-            <p>Student data scattered across tools, with reports built by hand. We bring it into one clear system.</p>
-          </article>
-          <article class="tile">
-            <h3>Manufacturing &amp; Industrial</h3>
-            <p>ERP exports and production data stuck in silos. 12+ years of real production-floor credibility.</p>
-          </article>
-          <article class="tile">
             <h3>Small &amp; Medium Business</h3>
-            <p>Disconnected tools and no real reporting. Measurable time and money saved within weeks.</p>
+            <p>Disconnected tools, no real reporting, and hours lost every week to manual data entry. We turn that into one clean system &mdash; measurable time and money saved within weeks.</p>
+          </article>
+          <article class="tile">
+            <h3>Nonprofits</h3>
+            <p>Donor records, member data, and reporting that eats your week. We clean it up and automate it &mdash; so your team spends time on the mission, not the spreadsheet.</p>
           </article>
         </div>
       </div>
@@ -301,13 +309,14 @@
       <div class="container about__inner">
         <h2 class="section__title">About Frank</h2>
         <p class="about__body">
-          Frank Mozingo is a data and systems engineer with 12+ years in semiconductor manufacturing &mdash;
-          building production data pipelines, system integrations, and automation at scale for companies like Wolfspeed.
-          MOX Consulting brings that same rigor to the organizations that need it most: the ones drowning in
-          spreadsheets with no dedicated data staff.
+          Frank Mozingo is a data and systems engineer who's spent 12+ years building production data pipelines,
+          system integrations, and automation &mdash; and years running operations from the inside, where he delivered
+          over $44,500 a year in documented cost savings at a single organization.
         </p>
         <p class="about__body">
-          If you want someone who has actually run these systems &mdash; not just sold them &mdash; that's the difference.
+          MOX Consulting brings that same rigor to the businesses that need it most: the ones drowning in
+          spreadsheets with no dedicated IT or data staff. If you want someone who has actually run these systems
+          &mdash; not just sold them &mdash; that's the difference.
         </p>
       </div>
     </section>
@@ -319,23 +328,28 @@
         <div class="faq__list">
 
           <details class="faq__item">
-            <summary>Do you work with any industry?</summary>
-            <p>Most industries, with two exceptions: medical/dental (HIPAA creates obligations that don't fit the current model) and defense/aerospace (ITAR/CMMC territory). Everyone else is fair game.</p>
+            <summary>How much does it cost to clean up and automate my business data?</summary>
+            <p>Most projects are a fixed price between $2,500 and $5,000, scoped up front so you know the number before any work starts. That covers cleaning up your data, automating one or two manual workflows, and setting up a clear dashboard. Ongoing support, if you want it, is an optional $300&ndash;$750/month.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>What kind of businesses do you work with?</summary>
+            <p>Small and mid-sized businesses (roughly 2&ndash;30 people) drowning in spreadsheets and disconnected apps, plus small nonprofits with the same problem. Two exceptions: medical/dental (HIPAA) and defense/aerospace (ITAR/CMMC). Everyone else is fair game.</p>
           </details>
 
           <details class="faq__item">
             <summary>What if we're not ready for AI yet?</summary>
-            <p>Good &mdash; AI is the last step, not the first. Every project starts with cleaning up your data. You can't automate or query data that isn't clean and organized.</p>
+            <p>That's fine &mdash; AI is the last step, not the first. Every project starts with cleaning up your data, because you can't automate or query data that isn't clean and organized.</p>
           </details>
 
           <details class="faq__item">
             <summary>Do we need to buy software licenses?</summary>
-            <p>No. The whole stack (PostgreSQL, NocoDB, n8n, Caddy) is open source and self-hosted. You pay for a small server (~$9/mo) and our time &mdash; nothing else.</p>
+            <p>No. The whole stack (PostgreSQL, NocoDB, n8n, Caddy) is open source and self-hosted. You pay for a small server (about $9/month) and our time &mdash; nothing else.</p>
           </details>
 
           <details class="faq__item">
             <summary>Can we keep our data on-site?</summary>
-            <p>Yes. We can run the identical system on a mini-PC at your location and manage it remotely &mdash; ideal for sensitive donor or student records.</p>
+            <p>Yes. We can run the identical system on a mini-PC at your location and manage it remotely &mdash; ideal for sensitive customer, financial, or donor records.</p>
           </details>
 
           <details class="faq__item">
@@ -345,7 +359,7 @@
 
           <details class="faq__item">
             <summary>How long does a typical project take?</summary>
-            <p>Cleanup through setup usually runs 2&ndash;6 weeks depending on how messy the data is. Adding reporting and AI on top can extend that. Optional support starts after handoff.</p>
+            <p>A typical project runs 2 to 4 weeks from cleanup through setup, depending on how messy the data is. Adding reporting and AI on top can extend that. Optional support starts after handoff.</p>
           </details>
 
           <details class="faq__item">
@@ -414,7 +428,9 @@
       </nav>
       <div class="footer__legal">
         <a href="mailto:frank.mozingo@gmail.com">frank.mozingo@gmail.com</a>
+        <span>Serving Wendell, Raleigh &amp; Wake County, NC</span>
         <span>mox-consulting.com</span>
+        <span>Last updated: <time datetime="2026-05-25">May 2026</time></span>
         <span>&copy; <span id="year">2026</span> MOX Consulting</span>
       </div>
     </div>

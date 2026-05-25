@@ -1,8 +1,8 @@
 # MOX Consulting — Website
 
 Static marketing site for [mox-consulting.com](https://mox-consulting.com). Data cleanup, workflow
-automation, systems integration, dashboards, and practical AI for churches, schools, manufacturers,
-and small businesses.
+automation, systems integration, dashboards, and practical AI &mdash; led with small businesses,
+nonprofits secondary.
 
 ## Stack
 Plain HTML + CSS + vanilla JS. No build step. Deployed on Cloudflare Pages.

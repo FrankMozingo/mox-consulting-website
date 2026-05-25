@@ -1,0 +1,36 @@
+# MOX Consulting
+
+> MOX Consulting helps small businesses and nonprofits clean up messy data, automate repetitive manual work, and add practical AI — so their teams stop living in spreadsheets. Based in Wendell, NC; serving Raleigh and Wake County. Founded by Frank Mozingo, a data and systems engineer with 12+ years building production data pipelines and automation, who has delivered over $44,500/year in documented cost savings running operations from the inside.
+
+## What MOX Consulting does
+
+- Data cleanup & organization: fix messy, scattered data so systems work together.
+- Workflow automation: stop copying data between apps and doing the same tasks by hand.
+- Systems integration: make existing tools talk to each other automatically.
+- Dashboards & reporting: clear, real-time visibility without building reports by hand.
+- Practical AI implementation: simple, useful AI that saves time (the last step, after clean data).
+
+## How it works
+
+- Free Systems Review: a no-cost 60–90 minute review that identifies the biggest time-wasters and delivers a one-page roadmap to keep.
+- Fixed-price build: typically $2,500–$5,000, scoped up front, usually 2–4 weeks.
+- Optional monthly support: $300–$750/month.
+- Built on open-source, self-hosted tools (PostgreSQL, NocoDB, n8n, Caddy). The client owns all data — full export anytime, no vendor lock-in.
+
+## Who it's for
+
+- Small and mid-sized businesses (roughly 2–30 people) drowning in spreadsheets and disconnected apps.
+- Small nonprofits with the same problem.
+- Not a fit for medical/dental (HIPAA) or defense/aerospace (ITAR/CMMC).
+
+## Key pages
+
+- [Home / full overview](https://mox-consulting.com/)
+- [Free Systems Review request](https://mox-consulting.com/#contact)
+- [Frequently asked questions](https://mox-consulting.com/#faq)
+
+## Contact
+
+- Email: frank.mozingo@gmail.com
+- Location: Wendell, North Carolina (serves Wake County and Raleigh area)
+- Veteran-owned.
