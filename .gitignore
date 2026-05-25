@@ -3,8 +3,9 @@
 Thumbs.db
 *.swp
 
-# Playwright / tooling artifacts
+# Playwright / wrangler tooling artifacts
 .playwright-mcp/
+.wrangler/
 *.log
 
 # Node (if a build step is added later)
