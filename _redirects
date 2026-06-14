@@ -1,3 +1,1 @@
-# Cloudflare Pages redirect rules
-# Format: <source> <destination> <status>
-# Example: /old-path /new-path 301
+/* https://mozingosystems.com/:splat 301!

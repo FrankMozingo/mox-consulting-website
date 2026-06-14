@@ -1,19 +1,18 @@
-# MOX Consulting — Website
+# MOX Consulting — Redirect Site
 
-Static marketing site for [mox-consulting.com](https://mox-consulting.com). Data cleanup, workflow
-automation, systems integration, dashboards, and practical AI &mdash; led with small businesses,
-nonprofits secondary.
+Static Cloudflare Pages redirect for [mox-consulting.com](https://mox-consulting.com).
+
+MOX Consulting is a retired brand. The active business identity is Mozingo Systems, and all
+traffic should forward to [mozingosystems.com](https://mozingosystems.com).
 
 ## Stack
 Plain HTML + CSS + vanilla JS. No build step. Deployed on Cloudflare Pages.
 
 ## Structure
-- `index.html` — single-page site
-- `css/styles.css` — mobile-first dark theme
-- `js/main.js` — smooth scroll, FAQ accordion, mobile menu, scroll-spy
-- `assets/` — favicon set + Open Graph image
+- `_redirects` — forwards all routes to `https://mozingosystems.com/:splat`
+- legacy site files remain in the repo history but are no longer the active public brand
 - `robots.txt`, `sitemap.xml` — SEO
-- `_headers`, `_redirects` — Cloudflare Pages config
+- `_headers` — Cloudflare Pages headers
 
 ## Local preview
 ```bash
@@ -23,7 +22,7 @@ python -m http.server 8000
 
 ## Deploy
 Cloudflare Pages, Git-connected to `FrankMozingo/mox-consulting-website` (branch `main`).
-It's a no-build static site — configure in the Pages dashboard:
+It's a no-build redirect site — configure in the Pages dashboard:
 - Framework preset: **None**
 - Build command: *(empty)*
 - Build output directory: **`/`** (repo root)
